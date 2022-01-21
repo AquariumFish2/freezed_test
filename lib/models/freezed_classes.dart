@@ -10,3 +10,9 @@ abstract class Post with _$Post {
   const factory Post(int id, String title) = _Post;
   factory Post.fromJson(Map<String, dynamic> json) => _$PostFromJson(json);
 }
+
+@freezed
+abstract class Comment with _$Comment {
+  const factory Comment(int id, String body,int postId) = _Comment;
+  factory Comment.fromJson(Map<String, dynamic> json) => _$CommentFromJson(json);
+}

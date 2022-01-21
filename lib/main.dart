@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:freezed_test/providers/messeges.dart';
+import 'package:freezed_test/providers/posts.dart';
 import 'package:freezed_test/screens/home_page.dart';
 import 'package:provider/provider.dart';
 
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(
-          create: (context) => Messeges(),
+          create: (context) => Posts(),
         )
       ],
       child: MaterialApp(

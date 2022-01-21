@@ -15,3 +15,16 @@ Map<String, dynamic> _$$_PostToJson(_$_Post instance) => <String, dynamic>{
       'id': instance.id,
       'title': instance.title,
     };
+
+_$_Comment _$$_CommentFromJson(Map<String, dynamic> json) => _$_Comment(
+      json['id'] as int,
+      json['body'] as String,
+      json['postId'] as int,
+    );
+
+Map<String, dynamic> _$$_CommentToJson(_$_Comment instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'body': instance.body,
+      'postId': instance.postId,
+    };
